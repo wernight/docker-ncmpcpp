@@ -1,7 +1,7 @@
 docker-ncmpcpp
 ==============
 
-Containerized version of [ncmpcpp](http://ncmpcpp.rybczak.net/) (NCurses Music Player Client (Plus Plus)) a MDP console client.
+Containerized version of [ncmpcpp](http://ncmpcpp.rybczak.net/screenshots.php) (NCurses Music Player Client (Plus Plus)) a MDP console client.
 
 Can be used together for example with [Mopidy](https://www.mopidy.com/), also accessible via Docker image
 [wernight/mopidy](https://registry.hub.docker.com/u/wernight/mopidy/).

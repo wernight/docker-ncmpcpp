@@ -14,6 +14,26 @@ Usage
 Note: It runs as user with random UID `71723` to avoid running as `root`.
 
 
+### Basic keyboard shortcuts
+
+  * `q` - Quit
+  * `1` - Help
+  * `3` - Browse
+      * `Enter` - Enter directory / Add item to playlist and play
+      * `Space` - Add item to playlist
+      * `Backspace` - Parent directory
+  * `4` - Search
+      * `Enter` to edit field
+      * `y` - Search
+      * `4` - Reset
+  * `5` - Library
+  * `s` - Stop
+  * `P` - Pause
+  * `<` / `>` - Previous / Next track
+  * `Backspace` - Play current track from the beginning
+  * `b` / `f` - Seek backward / forward
+
+
 Feedbacks
 ---------
 

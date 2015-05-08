@@ -10,6 +10,13 @@ RUN set -ex \
     # Create a random UID to avoid running as root.
  && useradd --uid 71723 -m ncmpcpp
 
+COPY entrypoint.sh /entrypoint.sh
+COPY .ncmpcpp/config /home/ncmpcpp/.ncmpcpp/config
+RUN set -ex \
+ && chmod o+rx /entrypoint.sh \
+ && chown -R ncmpcpp /home/ncmpcpp/.ncmpcpp
+
 USER ncmpcpp
 
-CMD ["ncmpcpp"]
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/usr/bin/ncmpcpp"]

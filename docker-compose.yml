@@ -1,0 +1,21 @@
+ncmpcpp:
+  image: wernight/ncmpcpp
+  links:
+    - mopidy
+  command: --host mopidy
+mopidy:
+  image: wernight/mopidy
+  ports:
+    # Un-comment lines below to enable MDP and/or HTTP server for other clients to connect.
+    #- 6600:6600
+    #- 6680:6680
+  volumes:
+    # You may remove or change those paths (the  path parts before column ':') for local media.
+    - media:/var/lib/mopidy/media:ro
+    - local:/var/lib/mopidy/local
+  command: [
+    # Un-comment lines below to enable services after setting your username/password/token.
+    #'-o', 'spotify/username=USERNAME', '-o', 'spotify/password=PASSWORD',
+    #'-o', 'gmusic/username=USERNAME', '-o', 'gmusic/password=PASSWORD',
+    #'-o', 'soundcloud/auth_token=TOKEN',
+  ]

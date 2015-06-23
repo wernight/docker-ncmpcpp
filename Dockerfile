@@ -15,4 +15,4 @@ RUN useradd --uid 71723 -m ncmpcpp
 
 USER ncmpcpp
 
-ENTRYPOINT ["ncmpcpp"]
+CMD ["ncmpcpp"]

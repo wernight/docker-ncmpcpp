@@ -9,7 +9,7 @@ Can be used together with any MPD server (like [Mopidy](https://www.mopidy.com/)
 Usage
 -----
 
-    $ docker run --rm -it wernight/ncmpcpp [--help]
+    $ docker run --rm -it wernight/ncmpcpp ncmpcpp [--help]
 
 Note: It runs as user with random UID `71723` to avoid running as `root`.
 

@@ -8,8 +8,7 @@ Docker ncmpcpp
 Can be used together with any MPD server (like [Mopidy](https://www.mopidy.com/)); meant to be used together with [wernight/mopidy](https://registry.hub.docker.com/u/wernight/mopidy/) Docker image.
 
 
-Usage
------
+### Usage
 
 Supposing you started an MPC-compatible server under a container named `ny-mpc-container` you can now connect to it via:
 
@@ -22,7 +21,6 @@ To see the full help of ncmpcpp do:
 Note: It runs as user with random UID `71723` to avoid running as `root`.
 
 
-Feedbacks
----------
+### Feedbacks
 
 Having more issues? [Report a bug on GitHub](https://github.com/wernight/docker-ncmpcpp/issues).

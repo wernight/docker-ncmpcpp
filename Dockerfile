@@ -1,14 +1,13 @@
-FROM debian:jessie
+FROM debian:stretch-slim
 
-MAINTAINER Werner Beroux <werner@beroux.com>
-
-# 1. http://ncmpcpp.rybczak.net/download.php#debian
-# 2. Create a random UID to avoid running as root.
-RUN apt-get update \
+RUN set -ex \
+ && apt-get update \
+    # http://ncmpcpp.rybczak.net/download.php#debian
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
      ncmpcpp \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
+    # Create a random UID to avoid running as root.
  && useradd --uid 71723 -m ncmpcpp
 
 USER ncmpcpp

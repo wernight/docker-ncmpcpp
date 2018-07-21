@@ -23,3 +23,5 @@ RUN chown -R ncmpcpp /home/ncmpcpp/.ncmpcpp
 USER ncmpcpp
 
 ENTRYPOINT ["/ncmpcpp.sh"]
+CMD ["/usr/bin/ncmpcpp"]
+
